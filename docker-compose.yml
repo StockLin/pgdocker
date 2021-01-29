@@ -10,9 +10,9 @@ services:
     volumes:
       - pgdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
+      - POSTGRES_USER="${SUPERUSER}"
+      - POSTGRES_PASSWORD="${PASSWORD}"
+      - POSTGRES_DB="${DBNAME}"
   
 volumes: 
   pgdata:
